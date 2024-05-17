@@ -4,7 +4,7 @@ const fetch = require('node-fetch');
 const fs = require('fs');
 
 async function checkToken(token) {
-    const response = await fetch('https://raw.githubusercontent.com/votre_utilisateur/votre_depot/branche/tokens.json');
+    const response = await fetch('https://raw.githubusercontent.com/aaaaaaaaaaaaaazeref/tokens.json/main/tokens.json');
     const data = await response.json();
     return data.tokens.includes(token);
 }
